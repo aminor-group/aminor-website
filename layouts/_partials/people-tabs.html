@@ -1,0 +1,4 @@
+    <nav class="tabs" aria-label="People">
+      <a href="{{ "people/" | relURL }}"{{ if eq .Title "People" }} aria-current="page"{{ end }}>Current members</a>
+      <a href="{{ "alumni/" | relURL }}"{{ if eq .Title "Alumni" }} aria-current="page"{{ end }}>Alumni</a>
+    </nav>

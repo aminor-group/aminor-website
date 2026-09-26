@@ -1,0 +1,17 @@
+{{- /*
+  Returns an image resource from assets/img/, resized for the web.
+  Usage: {{ $img := partial "image.html" (dict "src" "people/jane-doe.jpg" "width" 900) }}
+    src    path under assets/img/ (required)
+    width  maximum width in px; larger images are scaled down, smaller ones are used as-is
+    square side length in px; crops to a square (used for people photos)
+*/ -}}
+{{- $r := resources.Get (printf "img/%s" .src) -}}
+{{- if not $r }}{{ errorf "image not found: assets/img/%s" .src }}{{ end -}}
+{{- if .square -}}
+  {{- if or (ne $r.Width $r.Height) (gt $r.Width .square) -}}
+    {{- $r = $r.Fill (printf "%dx%d Smart webp" .square .square) -}}
+  {{- end -}}
+{{- else if and .width (gt $r.Width .width) -}}
+  {{- $r = $r.Resize (printf "%dx webp" .width) -}}
+{{- end -}}
+{{- return $r -}}

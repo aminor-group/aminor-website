@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <div class="wrap page-intro">
+    <h1>People</h1>
+{{ partial "people-tabs.html" . }}
+  </div>
+  {{- with hugo.Data.people.leader }}
+  {{- $img := partial "image.html" (dict "src" .photo "square" 480) }}
+  <section class="p-section" aria-labelledby="pi-name">
+    <div class="wrap pi">
+      <img src="{{ $img.RelPermalink }}" alt="{{ .name }}" width="{{ $img.Width }}" height="{{ $img.Height }}">
+      <div>
+        <span class="role">{{ .role }}</span>
+        <h2 id="pi-name">{{ .name }}</h2>
+        <ul>{{ range .titles }}<li>{{ . }}</li>{{ end }}</ul>
+        <span class="mail">{{ .email }}</span>
+      </div>
+    </div>
+  </section>
+  {{- end }}
+  {{- range hugo.Data.people.groups }}
+  {{- $id := .title | anchorize }}
+  <section class="p-section p-group" aria-labelledby="{{ $id }}">
+    <div class="wrap">
+      <h2 id="{{ $id }}">{{ .title }}</h2>
+      <ul class="people-grid">
+        {{- range .members }}
+        {{- $m := . }}
+        {{- $name := cond (.phd | default false) (printf "%s, Ph.D." .name) .name }}
+        <li class="person">
+          {{- with .photo }}
+          {{- $img := partial "image.html" (dict "src" . "square" 480) }}
+          <img src="{{ $img.RelPermalink }}" alt="{{ $m.name }}" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy">
+          {{- else }}
+          <div class="ph" role="img" aria-label="No photo yet"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="40" r="17"/><path d="M16 100c0-22 15-37 34-37s34 15 34 37z"/></svg></div>
+          {{- end }}
+          <div><h3 title="{{ $name }}">{{ $name }}</h3><p class="lines">{{ range $j, $l := .lines }}{{ if $j }}<br>{{ end }}{{ $l }}{{ end }}</p>{{ with .email }}<span class="mail">{{ . }}</span>{{ end }}</div>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+  {{- end }}
+{{ end }}

@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ partial "page-intro.html" . }}
+  {{- range $i, $a := hugo.Data.research.areas }}
+  {{- $img := partial "image.html" (dict "src" .banner.image "width" 2000) }}
+  <section class="r-section" id="{{ .id }}" aria-labelledby="{{ .id }}-t">
+    <div class="wrap">
+      <div class="banner">
+        <img src="{{ $img.RelPermalink }}" alt="{{ .banner.alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}"{{ if $i }} loading="lazy"{{ end }}>
+        <div class="label"><span class="n">{{ printf "%02d" (add $i 1) }}</span><h2 id="{{ .id }}-t">{{ .title }}</h2></div>
+      </div>
+      <div class="r-grid">
+        <div class="r-text">
+          {{- range .text }}
+          <p>{{ . | markdownify }}</p>
+          {{- end }}
+          {{- with .video }}
+          <a class="video-link" href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}&nbsp;&nearr;</a>
+          {{- end }}
+        </div>
+        <div>
+          <h3 class="papers-title">Selected papers</h3>
+          <ul class="papers">
+            {{- range .papers }}
+            <li><a href="https://doi.org/{{ .doi }}" target="_blank" rel="noopener">{{ .title }}<span class="ext" aria-hidden="true">&nearr;</span></a><span class="meta"><i>{{ .journal }}</i> · {{ .year }}</span></li>
+            {{- end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{- end }}
+
+  <section class="r-section" id="sponsors" aria-labelledby="sponsors-t">
+    <div class="wrap">
+      <div class="r-head"><span class="n">SUPPORT</span><h2 id="sponsors-t">Our sponsors over the years</h2></div>
+      <ul class="sponsors">
+        {{- range hugo.Data.research.sponsors }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,45 @@
+{{ define "main" }}
+  <div class="wrap page-intro">
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.lead }}</p>
+    {{- $years := slice }}
+    {{- range hugo.Data.gallery }}{{ if not (in $years .year) }}{{ $years = $years | append .year }}{{ end }}{{ end }}
+    <nav class="g-index" aria-label="Jump to year">{{ range $years }}<a href="#y{{ . }}">{{ . }}</a> {{ end }}</nav>
+  </div>
+  {{- $n := 0 }}
+  {{- range $years }}
+  {{- $y := . }}
+  {{- $photos := where hugo.Data.gallery "year" $y }}
+  <section class="g-year" id="y{{ $y }}" aria-labelledby="h{{ $y }}">
+    <div class="wrap g-grid">
+      <h2 class="g-label" id="h{{ $y }}">{{ $y }}</h2>
+      <div class="g-photos">
+        {{- range where $photos "feature" true }}
+        {{ partial "gallery-photo.html" (dict "p" . "i" $n "feature" true) }}
+        {{- $n = add $n 1 }}
+        {{- end }}
+        {{- $rest := where $photos "feature" "!=" true }}
+        {{- with $rest }}
+        <div class="g-row">
+          {{- range . }}
+          {{ partial "gallery-photo.html" (dict "p" . "i" $n "feature" false) }}
+          {{- $n = add $n 1 }}
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+  {{- end }}
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button type="button" class="lb-close" aria-label="Close">&times;</button>
+    <button type="button" class="lb-prev" aria-label="Previous photo">&larr;</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button type="button" class="lb-next" aria-label="Next photo">&rarr;</button>
+  </dialog>
+{{ end }}
+{{ define "scripts" }}
+{{- $js := resources.Get "js/gallery.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}"></script>
+{{ end }}

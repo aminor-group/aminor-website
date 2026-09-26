@@ -1,0 +1,78 @@
+# News, newest first. Items with the same date are shown together.
+#   date  "YYYY-MM" (or "YYYY" when the month is unknown)
+#   text  one sentence; simple HTML is fine (<i>Science</i>, <sub>3</sub>)
+#   link  optional; adds "Read ↗" (use for papers)
+# The home page shows the newest 10 dates; /news/ shows everything.
+# Paper news: Science, Nature and their main sister journals, since 2015,
+# with Andy Minor as last author.
+
+- date: "2026-09"
+  text: Nishkarsh Agarwal joined the group as a postdoctoral researcher. Welcome, Nishkarsh!
+- date: "2026-08"
+  text: Sally Karstens earned a Ph.D. Congratulations, Dr. Karstens!
+- date: "2026-08"
+  text: Kate Reidy has been appointed a professor at Stanford University. Congratulations, Professor Reidy!
+- date: "2026-06"
+  text: Staging and defect-limited intercalation of FeCl<sub>3</sub> in graphite electrodes, published in <i>Nature Communications</i>.
+  link: https://doi.org/10.1038/s41467-026-74399-w
+- date: "2026-05"
+  text: Kang&rsquo;an Wang, Alexandre Bordas and Haomin Lyu passed their qualifying exams. Congratulations!
+- date: "2026-01"
+  text: Dongin Jung passed the preliminary exam. Congratulations, Dongin!
+- date: "2025-09"
+  text: Dongin Jung joined the group as a new Ph.D. student. Welcome, Dongin!
+- date: "2025-09"
+  text: Identification of short-range ordering motifs in semiconductors, published in <i>Science</i>.
+  link: https://doi.org/10.1126/science.adu0719
+- date: "2025-08"
+  text: Dongye Liu earned a Ph.D. Congratulations, Dr. Liu!
+- date: "2024-09"
+  text: Alexandre Bordas, Kang&rsquo;an Wang, Sophia Arvin and Haomin Lyu joined the group as new Ph.D. students. Welcome!
+- date: "2024-08"
+  text: Multiple origins of extra electron diffractions in fcc metals, published in <i>Science Advances</i>.
+  link: https://doi.org/10.1126/sciadv.adn9673
+- date: "2024-02"
+  text: Rejuvenation as the origin of planar defects in the CrCoNi medium-entropy alloy, published in <i>Nature Communications</i>.
+  link: https://doi.org/10.1038/s41467-024-45696-z
+- date: "2023-05"
+  text: Deformation and failure of the CrCoNi medium-entropy alloy subjected to extreme shock loading, published in <i>Science Advances</i>.
+  link: https://doi.org/10.1126/sciadv.adf8602
+- date: "2023-02"
+  text: One-dimensional wormhole corrosion in metals, published in <i>Nature Communications</i>.
+  link: https://doi.org/10.1038/s41467-023-36588-9
+- date: "2023"
+  text: Andy Minor serves as President of the Microscopy Society of America.
+- date: "2022-09"
+  text: Xiaoyu Chen joined the group as a new Ph.D. student. Welcome, Xiaoyu!
+- date: "2021-10"
+  text: Elimination of oxygen sensitivity in α-titanium by substitutional alloying with Al, published in <i>Nature Communications</i>.
+  link: https://doi.org/10.1038/s41467-021-26374-w
+- date: "2021-09"
+  text: Cryoforged nanotwinned titanium with ultrahigh strength and ductility, published in <i>Science</i> and featured on the cover of Vol. 373, Issue 6561.
+  link: https://doi.org/10.1126/science.abe7252
+- date: "2021-02"
+  text: Probing electronic structure in berkelium and californium via an electron microscopy nanosampling approach, published in <i>Nature Communications</i>.
+  link: https://doi.org/10.1038/s41467-021-21189-1
+- date: "2020-10"
+  text: Defect reconfiguration in a Ti–Al alloy via electroplasticity, published in <i>Nature Materials</i>.
+  link: https://doi.org/10.1038/s41563-020-00817-z
+- date: "2020-10"
+  text: Mechanistic basis of oxygen sensitivity in titanium, published in <i>Science Advances</i>.
+  link: https://doi.org/10.1126/sciadv.abc4060
+- date: "2020-09"
+  text: Madelyn Payne joined the group as a new Ph.D. student. Welcome, Madelyn!
+- date: "2020-05"
+  text: Short-range order and its impact on the CrCoNi medium-entropy alloy, published in <i>Nature</i>.
+  link: https://doi.org/10.1038/s41586-020-2275-z
+- date: "2019-12"
+  text: Direct imaging of short-range order and its impact on deformation in Ti-6Al, published in <i>Science Advances</i>.
+  link: https://doi.org/10.1126/sciadv.aax2799
+- date: "2019-06"
+  text: Diffraction imaging of nanocrystalline structures in organic semiconductor molecular thin films, published in <i>Nature Materials</i>.
+  link: https://doi.org/10.1038/s41563-019-0387-3
+- date: "2019-06"
+  text: Direct measurement of nanostructural change during in situ deformation of a bulk metallic glass, published in <i>Nature Communications</i>.
+  link: https://doi.org/10.1038/s41467-019-10416-5
+- date: "2015-02"
+  text: Origin of dramatic oxygen solute strengthening effect in titanium, published in <i>Science</i>.
+  link: https://doi.org/10.1126/science.1260485

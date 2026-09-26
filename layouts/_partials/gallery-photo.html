@@ -1,0 +1,4 @@
+{{- /* One gallery photo: a 900px thumbnail that opens the 1800px version in the viewer. */ -}}
+{{- $small := partial "image.html" (dict "src" .p.photo "width" 900) -}}
+{{- $large := partial "image.html" (dict "src" .p.photo "width" 1800) -}}
+<figure class="ph{{ if .feature }} hero{{ end }}" style="--r:{{ printf "%.3f" (div (float $large.Width) $large.Height) }}"><a href="{{ $large.RelPermalink }}" data-i="{{ .i }}"><img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w" sizes="{{ if .feature }}(max-width: 760px) 100vw, 1040px{{ else }}(max-width: 760px) 50vw, 480px{{ end }}" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ .p.caption }}"{{ if ge .i 2 }} loading="lazy" decoding="async"{{ end }}></a><figcaption>{{ .p.caption }}</figcaption></figure>

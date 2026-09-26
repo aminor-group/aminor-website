@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <div class="wrap page-intro">
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Params.lead }}</p>
+    <div class="join">
+      <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+    </div>
+  </div>
+
+  <section class="p-section" aria-label="Offices">
+    <div class="wrap places">
+      {{- range $i, $o := .Params.offices }}
+      {{- $img := partial "image.html" (dict "src" .photo "width" 1400) }}
+      <article class="place">
+        <figure>
+          <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .alt }}"{{ if $i }} loading="lazy"{{ end }}>
+          <figcaption>{{ with .credit }}{{ . | safeHTML }}{{ end }}</figcaption>
+        </figure>
+        <span class="kicker">{{ .kicker }}</span>
+        <h2>{{ .name }}</h2>
+        <address>
+          {{- range .address }}
+          <span>{{ . }}</span>
+          {{- end }}
+        </address>
+        <a class="more" href="{{ .map }}" target="_blank" rel="noopener">Map&nbsp;&nearr;</a>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+{{ end }}

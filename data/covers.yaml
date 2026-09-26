@@ -1,0 +1,36 @@
+# Journal covers, shown above the publication list, newest first.
+#   image  path under assets/img/ (portrait cover, any size)
+#   issue  "Mon YYYY · Vol. X, No. Y"
+
+- journal: Macromolecular Rapid Communications
+  issue: Nov 2025 · Vol. 46, No. 22
+  image: covers/mrc-2025.webp
+  link: https://onlinelibrary.wiley.com/toc/15213927/2025/46/22
+- journal: Microscopy and Microanalysis
+  issue: Oct 2024 · Vol. 30, No. 5
+  image: covers/mam-2024.webp
+  link: https://academic.oup.com/mam/issue/30/5
+- journal: Science
+  issue: Sep 2021 · Vol. 373, No. 6561
+  image: covers/science-2021.webp
+  link: https://www.science.org/toc/science/373/6561
+- journal: Microscopy and Microanalysis
+  issue: Aug 2021 · Vol. 27, No. 4
+  image: covers/mam-2021.webp
+  link: https://academic.oup.com/mam/issue/27/4
+- journal: MRS Bulletin
+  issue: Jun 2019 · Vol. 44, No. 6
+  image: covers/mrs-bulletin-2019.webp
+  link: https://www.cambridge.org/core/journals/mrs-bulletin/issue/1E629A214558CC0CFA7326BE1C846086
+- journal: Physical Review Letters
+  issue: Aug 2015 · Vol. 115, No. 6
+  image: covers/prl-2015.webp
+  link: https://journals.aps.org/prl/issues/115/6
+- journal: ACS Macro Letters
+  issue: Jan 2015 · Vol. 4, No. 1
+  image: covers/acs-macro-letters-2015.webp
+  link: https://pubs.acs.org/toc/amlccd/4/1
+- journal: Advanced Engineering Materials
+  issue: Nov 2012 · Vol. 14, No. 11
+  image: covers/adem-2012.webp
+  link: https://advanced.onlinelibrary.wiley.com/toc/15272648/2012/14/11

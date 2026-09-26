@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{- /* Go templates drop plain HTML comments, so the signature is printed with safeHTML.
+       hugo.toml sets the minifier to keep comments. */ -}}
+{{ `<!--
+  Minor Research Group · UC Berkeley & Berkeley Lab
+  Designed and built by Dongin Jung, 2026.
+  ↑ ↑ ↓ ↓ ← → ← → B A
+-->` | safeHTML }}
+{{ partial "head.html" . }}
+</head>
+<body>
+{{ partial "header.html" . }}
+<main>
+{{ block "main" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+{{ $js := resources.Get "js/site.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}"></script>
+{{ block "scripts" . }}{{ end }}
+</body>
+</html>

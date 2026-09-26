@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <div class="wrap page-intro">
+    <h1>Publications</h1>
+    <p class="lead">Papers from the group, drawn from Andrew Minor&rsquo;s <a href="{{ site.Params.scholar }}" target="_blank" rel="noopener">Google Scholar profile&nbsp;&nearr;</a>.</p>
+  </div>
+
+  <section class="p-section" aria-labelledby="covers-t">
+    <div class="wrap">
+      <h2 id="covers-t" class="sub-h">Journal Covers</h2>
+      <ul class="covers">
+        {{- range hugo.Data.covers }}
+        {{- $img := partial "image.html" (dict "src" .image "width" 640) }}
+        <li class="cover"><a href="{{ .link }}" target="_blank" rel="noopener"><div class="img"><img src="{{ $img.RelPermalink }}" alt="{{ .journal }} cover, {{ index (split .issue " · ") 0 }}" width="{{ $img.Width }}" height="{{ $img.Height }}" loading="lazy"></div><span class="j">{{ .journal }}</span><span class="d">{{ .issue }}</span></a></li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
+  <section class="p-section" aria-labelledby="list-t">
+    <div class="wrap">
+      <div class="pub-head">
+        <h2 id="list-t" class="sub-h">Publication List</h2>
+        <label class="year-pick"><span>Year</span>
+          <select id="pub-year"><option value="">All years</option></select>
+        </label>
+      </div>
+      <div class="pub-tools" id="pub-tools">
+        <div class="seg" role="group" aria-label="Show">
+          <button type="button" data-kind="article" aria-pressed="true">Journal articles</button>
+          <button type="button" data-kind="all" aria-pressed="false">All<span class="long">, incl. abstracts &amp; preprints</span></button>
+        </div>
+        <label class="search"><span class="sr-only">Search publications</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="pub-search" type="search" placeholder="Search title, author or journal" autocomplete="off">
+        </label>
+      </div>
+      <div id="pub-list" aria-live="polite"></div>
+      <p class="no-match" id="pub-none" hidden>No publications match that search.</p>
+      <nav class="pager" id="pub-pager" aria-label="Publication pages"></nav>
+    </div>
+  </section>
+{{ end }}
+{{ define "scripts" }}
+{{- $data := resources.FromString "js/publications-data.js" (printf "window.PUBS=%s;" (jsonify hugo.Data.publications)) | fingerprint }}
+{{- $js := resources.Get "js/publications.js" | minify | fingerprint }}
+<script src="{{ $data.RelPermalink }}"></script>
+<script src="{{ $js.RelPermalink }}"></script>
+{{ end }}

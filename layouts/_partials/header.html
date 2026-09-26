@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <span class="brand-name">{{ site.Title }}</span>
+      <span class="brand-sub">{{ site.Params.tagline }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) (eq $.Params.nav .Name) }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

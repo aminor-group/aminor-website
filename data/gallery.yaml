@@ -1,0 +1,125 @@
+# Gallery photos, newest first; grouped by year on /gallery/.
+#   photo    path under assets/img/ (any size; resized automatically)
+#   caption  shown on hover and in the viewer
+#   feature  true -> shown full width at the top of its year (use for group photos)
+
+- year: 2025
+  photo: gallery/group-2025.webp
+  caption: Group photo, 2025
+  feature: true
+- year: 2024
+  photo: gallery/group-2024.webp
+  caption: Group photo, spring 2024
+  feature: true
+- year: 2024
+  photo: gallery/giants-game-2024.webp
+  caption: At a Giants game, Sep 2024
+- year: 2024
+  photo: gallery/lavals-2024.webp
+  caption: Group lunch, Apr 2024
+- year: 2024
+  photo: gallery/group-2024-tree.webp
+  caption: Group photo, spring 2024
+- year: 2023
+  photo: gallery/group-2023.webp
+  caption: Group photo, 2023
+  feature: true
+- year: 2020
+  photo: gallery/group-2020.webp
+  caption: Group photo, 2020
+  feature: true
+- year: 2019
+  photo: gallery/yosemite-2019.webp
+  caption: Yosemite, Jul 2019
+- year: 2019
+  photo: gallery/dumplings-2019.webp
+  caption: Making dumplings for Lunar New Year, Feb 2019
+- year: 2019
+  photo: gallery/china-2019-a.webp
+  caption: China trip, Jan 2019
+- year: 2019
+  photo: gallery/china-2019-b.webp
+  caption: China trip, Jan 2019
+- year: 2018
+  photo: gallery/shanghai-2018.webp
+  caption: Shanghai, Dec 2018
+- year: 2018
+  photo: gallery/china-2018.webp
+  caption: China trip, Dec 2018
+- year: 2018
+  photo: gallery/china-2018-b.webp
+  caption: China trip, Dec 2018
+- year: 2018
+  photo: gallery/thermal-2018.webp
+  caption: Seen through a thermal camera, Nov 2018
+- year: 2018
+  photo: gallery/fun-2018.webp
+  caption: Aug 2018
+- year: 2018
+  photo: gallery/xian-2018.webp
+  caption: Xi’an, Jun 2018
+- year: 2018
+  photo: gallery/shanghai-tower-2018.webp
+  caption: Shanghai Tower, Jun 2018
+- year: 2018
+  photo: gallery/selfie-2018.webp
+  caption: Jun 2018
+- year: 2017
+  photo: gallery/holiday-2017.webp
+  caption: Holiday party, Dec 2017
+  feature: true
+- year: 2017
+  photo: gallery/holiday-2017-b.webp
+  caption: Holiday party, Dec 2017
+- year: 2017
+  photo: gallery/holiday-2017-c.webp
+  caption: Holiday party, Dec 2017
+- year: 2017
+  photo: gallery/holiday-2017-d.webp
+  caption: Holiday party, Dec 2017
+- year: 2017
+  photo: gallery/holiday-2017-e.webp
+  caption: Holiday party, Dec 2017
+- year: 2016
+  photo: gallery/holiday-2016.webp
+  caption: Holiday party, Dec 2016
+  feature: true
+- year: 2016
+  photo: gallery/holiday-2016-b.webp
+  caption: Holiday party, Dec 2016
+- year: 2016
+  photo: gallery/holiday-2016-c.webp
+  caption: Holiday party, Dec 2016
+- year: 2016
+  photo: gallery/holiday-2016-d.webp
+  caption: Holiday party, Dec 2016
+- year: 2016
+  photo: gallery/holiday-2016-e.webp
+  caption: Holiday party, Dec 2016
+- year: 2016
+  photo: gallery/holiday-2016-f.webp
+  caption: Holiday party, Dec 2016
+- year: 2016
+  photo: gallery/holiday-2016-g.webp
+  caption: Holiday party, Dec 2016
+- year: 2016
+  photo: gallery/halloween-2016.webp
+  caption: Halloween, 2016
+- year: 2016
+  photo: gallery/halloween-2016-b.webp
+  caption: Halloween, 2016
+- year: 2016
+  photo: gallery/night-sky-2016.webp
+  caption: Night sky, Oct 2016
+- year: 2016
+  photo: gallery/berkeley-hills-2016.webp
+  caption: Sunrise over the Bay from the Berkeley hills, Sep 2016
+- year: 2016
+  photo: gallery/goats-2016.webp
+  caption: Goats in the hills, Jul 2016
+- year: 2016
+  photo: gallery/fog-2016.webp
+  caption: Fog over the Bay, Jul 2016
+- year: 2012
+  photo: gallery/talk-2012.webp
+  caption: Lecture hall, Feb 2012

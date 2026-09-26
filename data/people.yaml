@@ -1,0 +1,77 @@
+# Current members, shown on /people/ in this order.
+# To add someone: copy a member block into the right group.
+#   name   (required)
+#   phd    true -> ", Ph.D." after the name
+#   lines  up to 3 short lines under the name (position, joint advisor, ...)
+#   photo  path under assets/img/ (any size; the site crops it to a square)
+#   email
+# When someone leaves, move them to alumni.yaml.
+
+leader:
+  name: Andrew M. Minor
+  role: Group Leader
+  titles:
+  - Professor, Department of Materials Science and Engineering, University of California, Berkeley
+  - Facility Director, National Center for Electron Microscopy, Molecular Foundry, Lawrence Berkeley National Laboratory
+  photo: people/andrew-m-minor.webp
+  email: aminor@berkeley.edu
+groups:
+- title: Staff
+  members:
+  - name: Frances Allen
+    phd: true
+    lines:
+    - Research Scientist, UCB MSE
+    photo: people/frances-allen.webp
+    email: fiallen@lbl.gov
+- title: Postdoctoral Fellows
+  members:
+  - name: Julian Amado Vigil
+    phd: true
+    lines:
+    - 'Joint affiliation: Minor group and Long group (UCB Chemistry)'
+    photo: people/julian-amado-vigil.webp
+    email: jvigil@berkeley.edu
+  - name: Nishkarsh Agarwal
+    phd: true
+    email: nagarwal2@lbl.gov
+- title: Graduate Students
+  members:
+  - name: Madelyn I. Payne
+    lines:
+    - Ph.D. Student, UCB MSE
+    - (joint student with Prof. Mark Asta)
+    photo: people/madelyn-i-payne.webp
+    email: mpayne@berkeley.edu
+  - name: Xiaoyu Chen
+    lines:
+    - Ph.D. Student, UCB MSE
+    photo: people/xiaoyu-chen.webp
+    email: xiaoyuch@berkeley.edu
+  - name: Haomin Lyu
+    lines:
+    - Ph.D. Student, UCB MSE
+    photo: people/haomin-lyu.webp
+    email: haomin819@berkeley.edu
+  - name: Kang'an Wang
+    lines:
+    - Ph.D. Student, UCB MSE
+    photo: people/kang-an-wang.webp
+    email: kangan.wang@berkeley.edu
+  - name: Alexandre Bordas
+    lines:
+    - Ph.D. Student, UCB MSE
+    photo: people/alexandre-bordas.webp
+    email: alex_bordas@berkeley.edu
+  - name: Sophia Arvin
+    lines:
+    - Ph.D. Student, Mech E
+    - (joint student with Prof. Costas Grigoropoulos)
+    photo: people/sophia-arvin.webp
+    email: sophialarvin@berkeley.edu
+  - name: Dongin Jung
+    lines:
+    - Ph.D. Student, UCB MSE
+    - (joint student with Prof. Mark Asta)
+    photo: people/dongin-jung.webp
+    email: donginjung@berkeley.edu

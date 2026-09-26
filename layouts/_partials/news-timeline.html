@@ -1,0 +1,21 @@
+{{- /*
+  News timeline from data/news.yaml; items sharing a date become one entry.
+  Usage: {{ partial "news-timeline.html" 10 }}   (0 = show every date)
+*/ -}}
+{{- $dates := slice -}}
+{{- range hugo.Data.news }}{{ if not (in $dates .date) }}{{ $dates = $dates | append .date }}{{ end }}{{ end -}}
+{{- if gt . 0 }}{{ $dates = first . $dates }}{{ end -}}
+<ul class="timeline">
+  {{- range $dates }}
+  {{- $d := . }}
+  <li>
+    <time datetime="{{ $d }}">{{ if eq (len $d) 7 }}{{ (time (printf "%s-01" $d)).Format "Jan 2006" }}{{ else }}{{ $d }}{{ end }}</time>
+    <span class="dot" aria-hidden="true"></span>
+    <p class="text">
+      {{- range where hugo.Data.news "date" $d -}}
+      <span class="line">{{ .text | safeHTML }}{{ with .link }}&nbsp;<a href="{{ . }}" target="_blank" rel="noopener">Read&nbsp;&nearr;</a>{{ end }}</span>
+      {{- end -}}
+    </p>
+  </li>
+  {{- end }}
+</ul>

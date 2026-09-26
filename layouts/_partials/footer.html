@@ -1,0 +1,45 @@
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>{{ site.Title }}</h2>
+        <address>
+          <span>Department of Materials Science &amp; Engineering</span>
+          <span>University of California, Berkeley</span>
+          <span>Berkeley, CA 94720</span>
+        </address>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>{{ site.Params.pi }}</li>
+          <li><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          {{- range after 1 site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="logos">
+      <a class="ucb" href="https://mse.berkeley.edu" target="_blank" rel="noopener">
+        {{ with resources.Get "img/site/logo-uc-berkeley-white.png" }}<img src="{{ .RelPermalink }}" alt="UC Berkeley" width="{{ .Width }}" height="{{ .Height }}">{{ end }}
+        <span>Materials Science<br>&amp; Engineering</span>
+      </a>
+      <a class="lbl" href="https://foundry.lbl.gov" target="_blank" rel="noopener">
+        {{ with resources.Get "img/site/logo-berkeley-lab.png" }}<img src="{{ .RelPermalink }}" alt="Berkeley Lab" width="{{ .Width }}" height="{{ .Height }}">{{ end }}
+        <span>Molecular Foundry<br>National Center for Electron Microscopy</span>
+      </a>
+    </div>
+
+    <div class="legal">
+      <span>&copy; {{ now.Year }} {{ site.Title }}</span>
+      <span>Department of Materials Science &amp; Engineering · Berkeley Lab</span>
+    </div>
+  </div>
+</footer>

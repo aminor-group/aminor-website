@@ -1,0 +1,6 @@
+  <div class="wrap page-intro">
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.lead }}
+    <p class="lead">{{ . | markdownify }}</p>
+    {{- end }}
+  </div>

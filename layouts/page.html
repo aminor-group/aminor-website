@@ -1,0 +1,9 @@
+{{- /* Fallback for any plain markdown page added to content/ without a layout. */ -}}
+{{ define "main" }}
+{{ partial "page-intro.html" . }}
+  <section class="p-section">
+    <div class="wrap prose">
+      {{ .Content }}
+    </div>
+  </section>
+{{ end }}

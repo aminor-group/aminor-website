@@ -1,0 +1,262 @@
+# Alumni, shown on /alumni/ with search and 10 per page.
+# Order here is the order on the page: most recent first.
+#   name, phd (true/false), start, end (years), affiliation (current position),
+#   email, photo (path under assets/img/; optional, initials are shown otherwise)
+
+- name: Kate Reidy
+  phd: true
+  start: 2024
+  end: 2026
+  affiliation: Professor at Stanford University
+  email: kareidy@stanford.edu
+  photo: people/kate-reidy.webp
+- name: Sally Karstens
+  start: 2020
+  end: 2026
+  email: sally_karstens@berkeley.edu
+  photo: people/sally-karstens.webp
+- name: Iliana Marrujo
+  affiliation: Applied Materials
+  photo: people/iliana-marrujo.webp
+- name: Xavier Alberto Albors
+  affiliation: UCSB
+  photo: people/xavier-alberto-albors.webp
+- name: Lilian Vogl
+  affiliation: Group Leader at MPI Dusseldorf
+  email: Lilian.Vogl@outlook.com
+  photo: people/lilian-vogl.webp
+- name: Sean Mills
+  phd: true
+  email: seanmills@lehigh.edu
+  photo: people/sean-mills.webp
+- name: Yael Tsarfati
+  phd: true
+  email: yaeltsa@stanford.edu
+  photo: people/yael-tsarfati.webp
+- name: Dana Byrne
+  affiliation: Applied Materials
+  photo: people/dana-byrne.webp
+- name: Dongye Liu
+  photo: people/dongye-liu.webp
+- name: Peter Schweizer
+  affiliation: Group Leader at MPI Dusseldorf
+  email: peter.ps.schweizer@outlook.com
+  photo: people/peter-schweizer.webp
+- name: Alice Lassnig
+- name: Mingwei Zhang
+  phd: true
+  affiliation: Assistant Professor at UC Davis
+  email: mwwzhang@ucdavis.edu
+  photo: people/mingwei-zhang.webp
+- name: Thomas Harold Greathouse
+  photo: people/thomas-harold-greathouse.webp
+- name: Hadas Sternlicht
+  phd: true
+  photo: people/hadas-sternlicht.webp
+- name: Jennifer Donohue
+  photo: people/jennifer-donohue.webp
+- name: Min Chen
+  photo: people/min-chen.webp
+- name: Steven Zeltmann
+  photo: people/steven-zeltmann.webp
+- name: Chaoyi Zhu
+  phd: true
+  affiliation: EAG Group
+  photo: people/chaoyi-zhu.webp
+- name: Ruopeng Zhang
+  phd: true
+  affiliation: Apple Inc.
+  photo: people/ruopeng-zhang.webp
+- name: Xiaoqing Li
+  affiliation: EAG Group
+  photo: people/xiaoqing-li.webp
+- name: Daniel Durham
+  affiliation: Argonne National Laboratory
+  photo: people/daniel-durham.webp
+- name: Jay Aindow
+  affiliation: Intel, Oregon
+  email: jayaindow@berkeley.edu
+  photo: people/jay-aindow.webp
+- name: Shiteng Zhao
+  phd: true
+  affiliation: Beihang University
+  email: sdlszst@gmail.com
+  photo: people/shiteng-zhao.webp
+- name: Lauren Hughes
+  phd: true
+  affiliation: Exponent, Inc.
+  email: lauren.an.hughes@gmail.com
+  photo: people/lauren-hughes.webp
+- name: Yang Yang
+  phd: true
+  affiliation: Penn State University
+  email: yang@psu.edu
+  photo: people/yang-yang.webp
+- name: Alexander Mueller
+  phd: true
+  affiliation: Kearny, Munich, Germany
+  photo: people/alexander-mueller.webp
+- name: Sarah Wang
+  affiliation: MS Student, UCB MSE
+  email: sarahywang@berkeley.edu
+  photo: people/sarah-wang.webp
+- name: Yan Chong
+  phd: true
+  affiliation: Kyoto University
+  email: chong.yan.6w@kyoto-u.ac.jp
+  photo: people/yan-chong.webp
+- name: Nathan Velez
+  phd: true
+  affiliation: Exponent, Inc.
+  email: nvelez@exponent.com
+  photo: people/nathan-velez.webp
+- name: Xiaotao Liu
+  phd: true
+  affiliation: Wuhan University, China
+  photo: people/xiaotao-liu.webp
+- name: Lily Shiau
+  affiliation: Graduate Student, Caltech
+  email: lshiau@berkeley.edu
+  photo: people/lily-shiau.webp
+- name: Thomas Pekin
+  phd: true
+  affiliation: Humboldt Universität zu Berlin
+  email: tcpekin@gmail.com
+  photo: people/thomas-pekin.webp
+- name: Ouliana Panova
+  phd: true
+  affiliation: Stanford University
+  email: klappar.panova@gmail.com
+  photo: people/ouliana-panova.webp
+- name: Julian Sabisch
+  phd: true
+  affiliation: University of Oklahoma
+  email: gamgron@gmail.com
+  photo: people/julian-sabisch.webp
+- name: Rachel Traylor
+  phd: true
+  affiliation: Exponent, Inc.
+  email: rtraylor@exponent.com
+  photo: people/rachel-traylor.webp
+- name: Haider Rasool
+  phd: true
+  affiliation: Physical Optics Corporation
+  email: haiderimadrasool@gmail.com
+  photo: people/haider-rasool.webp
+- name: Mary Scott
+  phd: true
+  affiliation: Asst. Professor & Faculty Scientist, UCB MSE & NCEM, MF, LBNL
+  email: MCScott@lbl.gov
+  photo: people/mary-scott.webp
+- name: Claire Chisholm
+  phd: true
+  affiliation: Amateur Egyptologist, UCSB
+  email: chisholm@ucsb.edu
+  photo: people/claire-chisholm.webp
+- name: Rohini Sankaran
+  phd: true
+  affiliation: LLNL
+  email: rohini.sankaran@gmail.com
+  photo: people/rohini-sankaran.webp
+- name: Josh Kacher
+  phd: true
+  affiliation: Asst. Professor at Georgia Tech
+  email: jkacherbyu@gmail.com
+  photo: people/josh-kacher.webp
+- name: Christopher T. Nelson
+  phd: true
+  affiliation: Oak Ridge National Laboratory
+  email: nelsonct@ornl.gov
+  photo: people/christopher-t-nelson.webp
+- name: Xunxun Liao
+  affiliation: Goldman Sachs
+  email: xunxun.liao@gmail.com
+  photo: people/xunxun-liao.webp
+- name: Christoph Gammer
+  phd: true
+  affiliation: Austrian Academy of Sciences, Erich Schmid Institute of Materials Science, Leoben, Austria
+  email: Christoph.Gammer@oeaw.ac.at
+  photo: people/christoph-gammer.webp
+- name: Amanda Lupinacci
+  phd: true
+  affiliation: Keysight Technologies
+  email: amanda.lupinacci@gmail.com
+  photo: people/amanda-lupinacci.webp
+- name: Hua Guo
+  phd: true
+  affiliation: Rice University
+  email: ghatlbnl@gmail.com
+  photo: people/hua-guo.webp
+- name: Burak Ozdol
+  phd: true
+  affiliation: Western Digital
+  email: bozdol@gmail.com
+  photo: people/burak-ozdol.webp
+- name: Alanna Eilenberg
+  affiliation: University of Florida
+  email: ajeilenberg@gmail.com
+  photo: people/alanna-eilenberg.webp
+- name: Qian Yu
+  phd: true
+  affiliation: Professor, Zheijiang University, China
+  email: yu_qian@zju.edu.cn
+  photo: people/qian-yu.webp
+- name: Eita Tochigi
+  phd: true
+  affiliation: Assistant Professor, Institute of Engineering Innovation, The University of Tokyo, Japan
+  email: tochigi@sigma.t.u-tokyo.ac.jp
+  photo: people/eita-tochigi.webp
+- name: Yu Deng “Danny”
+  phd: true
+  affiliation: National Laboratory of Solid State Microstructures, Center of Materials analysis & Department of Physics, Nanjing University, China
+  email: njudengyu@gmail.com
+  photo: people/yu-deng-danny.webp
+- name: Bin Xiang
+  phd: true
+  affiliation: Professor, University of Science and Technology of China (USTC), China
+  email: binxiang102@gmail.com
+  photo: people/bin-xiang.webp
+- name: Jessie Yang
+  affiliation: Tesla, Inc.
+  email: oroitsme@gmail.com
+  photo: people/jessie-yang.webp
+- name: Matt Lowry
+  phd: true
+  affiliation: Headway Technologies
+  email: mlowry@berkeley.edu
+  photo: people/matt-lowry.webp
+- name: Kai Chen
+  phd: true
+  affiliation: Professor, Xi’an Jiaotong University, China
+  email: kchenlbl@gmail.com
+  photo: people/kai-chen.webp
+- name: Daniel Kiener
+  phd: true
+  affiliation: Associate Professor, Erich Schmid Institute for Materials Science, Austrian Academy of Sciences, Austria
+  email: daniel.kiener@oeaw.ac.at
+  photo: people/daniel-kiener.webp
+- name: Suhan Kim
+  phd: true
+  affiliation: Korea Research Institute of Chemical Technology, Daejeon, Korea
+  email: suhan.kim@gmail.com
+  photo: people/suhan-kim.webp
+- name: Liz Withey
+  phd: true
+  affiliation: LLNL
+  email: ewithey@gmail.com
+  photo: people/liz-withey.webp
+- name: Vinay Shriram
+  phd: true
+  affiliation: (Graduate Student, UCLA), Intel, Hillsboro, Oregon
+  email: karkehalli@gmail.com
+  photo: people/vinay-shriram.webp
+- name: Zhiwei Shan
+  phd: true
+  affiliation: Professor, Xian Jiaotong University, China, Director, Hysitron Applied Research Center, Hysitron Inc.
+  email: zhiweishan@gmail.com
+  photo: people/zhiwei-shan.webp
+- name: Jia Ye
+  phd: true
+  affiliation: Applied Materials
+  email: yejia98@gmail.com
+  photo: people/jia-ye.webp
