@@ -157,7 +157,8 @@ Look at every page you touched at desktop width and at about 390 px (phone): no
 horizontal scrolling, rows still line up, nothing wraps that used to fit on one line.
 Also check the build under a sub-path, as GitHub Pages serves it before the custom domain
 is set: `hugo server --baseURL http://localhost:1313/aminor-website/`. All links use
-`relURL` or `.RelPermalink`, never hard-coded `/paths`.
+`relURL` or `.RelPermalink`, never hard-coded `/paths`; link the home page with
+`site.Home.RelPermalink` (`"/" | relURL` drops the sub-path).
 
 ### Upgrading Hugo
 
