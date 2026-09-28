@@ -1,75 +1,12 @@
 # Research areas, in page order. Areas with a "home" block also appear as tiles
 # on the home page (image, blurb).
 #   banner   wide image across the top of the area on /research/
+#            (optional position, e.g. "50% 10%", picks which part of the image shows)
 #   text     paragraphs
 #   video    optional link under the text
 #   papers   "Selected papers" (title, journal, year, doi)
 
 areas:
-- id: nanomechanics
-  title: In situ TEM Nanomechanics
-  home:
-    image: research/area-nanomechanics.webp
-    alt: Colorized micrograph of dog-bone tensile specimens cut into a metal sheet, from the MRS Bulletin cover on in situ nanomechanical testing, June 2019
-    blurb: Quantitative in situ TEM testing that measures mechanical properties while we watch the microstructure of nanoscale volumes evolve.
-  banner:
-    image: research/banner-nanomechanics.webp
-    alt: Colorized micrograph of dog-bone tensile specimens cut into a metal sheet
-  text:
-  - We focus on novel experimental methods to investigate deformation mechanisms in small volumes. In particular, we use in situ TEM techniques such as quantitative nanocompression to both measure the mechanical properties and observe the microstructural evolution of nanoscale volumes simultaneously.
-  papers:
-  - title: Visualization and validation of twin nucleation and early-stage growth in magnesium
-    journal: Nature Communications
-    year: 2022
-    doi: 10.1038/s41467-021-27591-z
-  - title: In situ transmission electron microscopy investigation of electroplasticity in single crystal nickel
-    journal: Acta Materialia
-    year: 2022
-    doi: 10.1016/j.actamat.2021.117461
-  - title: Achieving large uniform tensile elasticity in microfabricated diamond
-    journal: Science
-    year: 2021
-    doi: 10.1126/science.abc4174
-  - title: Defect reconfiguration in a Ti–Al alloy via electroplasticity
-    journal: Nature Materials
-    year: 2021
-    doi: 10.1038/s41563-020-00817-z
-  - title: Twin nucleation from a single ⟨c+a⟩ dislocation in hexagonal close-packed crystals
-    journal: Acta Materialia
-    year: 2021
-    doi: 10.1016/j.actamat.2020.10.038
-- id: soft-materials
-  title: Electron Microcharacterization of Soft Materials
-  home:
-    image: research/area-soft-materials.webp
-    alt: 'Artwork: 4D-STEM orientation maps of polymer lamellae rendered as stained-glass windows, with diffraction patterns cast on the floor'
-    blurb: Electron imaging and in situ methods for polymers and other soft materials at the nanoscale.
-  banner:
-    image: research/area-soft-materials.webp
-    alt: 'Artwork: 4D-STEM orientation maps of polymer lamellae rendered as stained-glass windows'
-  text:
-  - We are developing methods to image structure and processes in soft materials, such as polymers, at the nanoscale. This involves the development of electron beam imaging techniques, in situ TEM methods, and investigations to further our understanding of electron scattering in non-crystalline, organic and inorganic soft materials.
-  papers:
-  - title: In situ 4D-STEM imaging of the orientation of lamellar clusters in polymer crystallization
-    journal: Macromolecular Rapid Communications
-    year: 2025
-    doi: 10.1002/marc.202500450
-  - title: Multimodal characterization of crystal structure and formation in rubrene thin films reveals erasure of orientational discontinuities
-    journal: Advanced Functional Materials
-    year: 2023
-    doi: 10.1002/adfm.202207867
-  - title: Formation of hierarchically ordered structures in conductive polymers to enhance the performances of lithium-ion batteries
-    journal: Nature Energy
-    year: 2023
-    doi: 10.1038/s41560-022-01176-6
-  - title: 'Cryogenic 4D-STEM analysis of an amorphous-crystalline polymer blend: combined nanocrystalline and amorphous phase mapping'
-    journal: iScience
-    year: 2022
-    doi: 10.1016/j.isci.2022.103882
-  - title: Extreme ductility in freestanding polystyrene thin films
-    journal: Macromolecules
-    year: 2020
-    doi: 10.1021/acs.macromol.0c01387
 - id: metallurgy
   title: Metallurgy
   home:
@@ -108,6 +45,10 @@ areas:
     doi: 10.1038/s41586-020-2275-z
 - id: methods
   title: In situ TEM & 4D-STEM Methods
+  home:
+    image: research/banner-methods.webp
+    alt: Artwork of a 4D-STEM dataset, with orientation streamlines beside a grid of diffraction patterns
+    blurb: 4D-STEM, in situ TEM and laser-based methods that map structure and strain while materials deform.
   banner:
     image: research/banner-methods.webp
     alt: 'Artwork of a 4D-STEM dataset: flowing orientation streamlines beside a grid of diffraction patterns, one per probe position'
@@ -137,6 +78,67 @@ areas:
     journal: Microscopy and Microanalysis
     year: 2021
     doi: 10.1017/S1431927620024770
+- id: soft-materials
+  title: Electron Microcharacterization of Soft Materials
+  home:
+    image: research/area-soft-materials.webp
+    alt: 'Artwork: 4D-STEM orientation maps of polymer lamellae rendered as stained-glass windows, with diffraction patterns cast on the floor'
+    blurb: Electron imaging and in situ methods for polymers and other soft materials at the nanoscale.
+  banner:
+    image: research/area-soft-materials.webp
+    alt: 'Artwork: 4D-STEM orientation maps of polymer lamellae rendered as stained-glass windows'
+  text:
+  - We are developing methods to image structure and processes in soft materials, such as polymers, at the nanoscale. This involves the development of electron beam imaging techniques, in situ TEM methods, and investigations to further our understanding of electron scattering in non-crystalline, organic and inorganic soft materials.
+  papers:
+  - title: In situ 4D-STEM imaging of the orientation of lamellar clusters in polymer crystallization
+    journal: Macromolecular Rapid Communications
+    year: 2025
+    doi: 10.1002/marc.202500450
+  - title: Multimodal characterization of crystal structure and formation in rubrene thin films reveals erasure of orientational discontinuities
+    journal: Advanced Functional Materials
+    year: 2023
+    doi: 10.1002/adfm.202207867
+  - title: Formation of hierarchically ordered structures in conductive polymers to enhance the performances of lithium-ion batteries
+    journal: Nature Energy
+    year: 2023
+    doi: 10.1038/s41560-022-01176-6
+  - title: 'Cryogenic 4D-STEM analysis of an amorphous-crystalline polymer blend: combined nanocrystalline and amorphous phase mapping'
+    journal: iScience
+    year: 2022
+    doi: 10.1016/j.isci.2022.103882
+  - title: Extreme ductility in freestanding polystyrene thin films
+    journal: Macromolecules
+    year: 2020
+    doi: 10.1021/acs.macromol.0c01387
+- id: nanomechanics
+  title: In situ TEM Nanomechanics
+  banner:
+    image: research/banner-nanomechanics.webp
+    alt: Colorized TEM image of metal nanoparticles resting on a substrate
+    position: 50% 35%
+  text:
+  - We focus on novel experimental methods to investigate deformation mechanisms in small volumes. In particular, we use in situ TEM techniques such as quantitative nanocompression to both measure the mechanical properties and observe the microstructural evolution of nanoscale volumes simultaneously.
+  papers:
+  - title: Visualization and validation of twin nucleation and early-stage growth in magnesium
+    journal: Nature Communications
+    year: 2022
+    doi: 10.1038/s41467-021-27591-z
+  - title: In situ transmission electron microscopy investigation of electroplasticity in single crystal nickel
+    journal: Acta Materialia
+    year: 2022
+    doi: 10.1016/j.actamat.2021.117461
+  - title: Achieving large uniform tensile elasticity in microfabricated diamond
+    journal: Science
+    year: 2021
+    doi: 10.1126/science.abc4174
+  - title: Defect reconfiguration in a Ti–Al alloy via electroplasticity
+    journal: Nature Materials
+    year: 2021
+    doi: 10.1038/s41563-020-00817-z
+  - title: Twin nucleation from a single ⟨c+a⟩ dislocation in hexagonal close-packed crystals
+    journal: Acta Materialia
+    year: 2021
+    doi: 10.1016/j.actamat.2020.10.038
 sponsors:
 - Office of Naval Research
 - National Science Foundation

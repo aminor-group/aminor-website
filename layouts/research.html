@@ -5,7 +5,7 @@
   <section class="r-section" id="{{ .id }}" aria-labelledby="{{ .id }}-t">
     <div class="wrap">
       <div class="banner">
-        <img src="{{ $img.RelPermalink }}" alt="{{ .banner.alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}"{{ if $i }} loading="lazy"{{ end }}>
+        <img src="{{ $img.RelPermalink }}" alt="{{ .banner.alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}"{{ with .banner.position }} style="object-position:{{ . | safeCSS }}"{{ end }}{{ if $i }} loading="lazy"{{ end }}>
         <div class="label"><span class="n">{{ printf "%02d" (add $i 1) }}</span><h2 id="{{ .id }}-t">{{ .title }}</h2></div>
       </div>
       <div class="r-grid">

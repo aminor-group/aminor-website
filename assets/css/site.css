@@ -207,10 +207,10 @@ main section + section{border-top:1px solid var(--rule)}
 @media (max-width:640px){ .pi{grid-template-columns:1fr} .pi img{max-width:220px} }
 
 .people-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 24px;list-style:none;margin:0;padding:0}
-.person{display:grid;gap:10px;align-content:start}
+.person{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;align-content:start;min-width:0}
 .person img,.person .ph{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--radius);background:var(--rule)}
 .person .ph{display:grid;place-items:end center;overflow:hidden}
-.person .ph svg{width:80%;fill:#B8C0CE}
+.person .ph svg{display:block;width:80%;height:auto;fill:#B8C0CE}
 .person h3{font-size:1.1875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* role/affiliation: always exactly three lines tall so emails line up across the grid */
 .person .lines{font-size:.875rem;line-height:1.5;color:#3A4256;height:4.5em;margin:4px 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}

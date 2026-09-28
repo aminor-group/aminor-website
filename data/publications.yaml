@@ -577,13 +577,6 @@
   type: article
   doi: 10.1016/j.actamat.2024.119940
   scholar: YsKTazIAAAAJ:It0W0vAlS5QC
-- title: Proton irradiation-decelerated intergranular corrosion of Ni-Cr alloys in molten salt
-  authors: W Zhou, Y Yang, G Zheng, KB Woller, PW Stahle, AM Minor, MP Short
-  venue: Nature communications 11 (1), 3430, 2020
-  year: 2020
-  type: article
-  doi: 10.1038/s41467-020-17244-y
-  scholar: YsKTazIAAAAJ:v6i8RKmR8ToC
 - title: Direct imaging of the crystalline domains and their orientation in the PS-b-PEO block copolymer with 4D-STEM
   authors: M Chen, KC Bustillo, V Patel, BH Savitzky, H Sternlicht, JA Maslyn, ...
   venue: Macromolecules 57 (12), 5629, 2024
@@ -1058,13 +1051,6 @@
   type: abstract
   doi: 10.1017/s1431927622002264
   scholar: YsKTazIAAAAJ:g_UdREhPGEoC
-- title: 4D-STEM of beam-sensitive materials
-  authors: KC Bustillo, SE Zeltmann, M Chen, J Donohue, J Ciston, C Ophus, ...
-  venue: Accounts of chemical research 54 (11), 2543-2551, 2021
-  year: 2021
-  type: article
-  doi: 10.1021/acs.accounts.1c00073
-  scholar: YsKTazIAAAAJ:PQEM9vzQD9gC
 - title: 4D-STEM analysis with the open source py4DSTEM and crystal4D toolkits
   authors: C Ophus, A Rakowski, J Munshi, BH Savitzky, S Zeltmann, A Bruefach, ...
   venue: Microscopy and Microanalysis 28 (S1), 3054-3055, 2022
@@ -1180,6 +1166,13 @@
   type: article
   doi: 10.1016/j.mattod.2021.10.031
   scholar: YsKTazIAAAAJ:Azgs6IHzeyYC
+- title: 4D-STEM of beam-sensitive materials
+  authors: KC Bustillo, SE Zeltmann, M Chen, J Donohue, J Ciston, C Ophus, ...
+  venue: Accounts of chemical research 54 (11), 2543-2551, 2021
+  year: 2021
+  type: article
+  doi: 10.1021/acs.accounts.1c00073
+  scholar: YsKTazIAAAAJ:PQEM9vzQD9gC
 - title: Ultrafast optically-induced melting of trimer clusters in 1T’-TaTe2
   authors: KM Siddiqui, DB Durham, F Cropp, S Rajpurohit, C Ophus, Y Zhu, ...
   venue: Laser Science, JW7A. 112, 2021
@@ -1454,6 +1447,13 @@
   year: 2021
   type: abstract
   scholar: YsKTazIAAAAJ:2ywjKiB__4kC
+- title: Proton irradiation-decelerated intergranular corrosion of Ni-Cr alloys in molten salt
+  authors: W Zhou, Y Yang, G Zheng, KB Woller, PW Stahle, AM Minor, MP Short
+  venue: Nature communications 11 (1), 3430, 2020
+  year: 2020
+  type: article
+  doi: 10.1038/s41467-020-17244-y
+  scholar: YsKTazIAAAAJ:v6i8RKmR8ToC
 - title: Effect of salt concentration profiles on protrusion growth in lithium-polymer‑lithium cells
   authors: L Frenck, VD Veeraraghavan, JA Maslyn, A Müller, AS Ho, WS Loo, ...
   venue: Solid State Ionics 358, 115517, 2020
@@ -3758,13 +3758,6 @@
   type: article
   doi: 10.1080/14786430600876585
   scholar: YsKTazIAAAAJ:XDrR66g3YHsC
-- title: In situ nanoindentation in a transmission electron microscope
-  authors: AM Minor
-  venue: University of California, Berkeley, 2002
-  year: 2002
-  type: article
-  doi: 10.2172/807441
-  scholar: YsKTazIAAAAJ:u_35RYKgDlwC
 - title: 'In situ TEM nanoindentation and dislocation-grain boundary interactions: a tribute to David Brandon'
   authors: JTM De Hosson, WA Soer, AM Minor, Z Shan, EA Stach, SA Syed Asif, ...
   venue: Journal of materials science 41 (23), 7704-7719, 2006
@@ -4089,6 +4082,13 @@
   type: abstract
   doi: 10.1017/s1431927603444504
   scholar: YsKTazIAAAAJ:EUQCXRtRnyEC
+- title: In situ nanoindentation in a transmission electron microscope
+  authors: AM Minor
+  venue: University of California, Berkeley, 2002
+  year: 2002
+  type: article
+  doi: 10.2172/807441
+  scholar: YsKTazIAAAAJ:u_35RYKgDlwC
 - title: In-situ transmission electron microscopy study of the nanoindentation behavior of Al
   authors: AM Minor, ET Lilleodden, EA Stach, JW Morris Jr
   venue: Journal of electronic materials 31 (10), 958-964, 2002

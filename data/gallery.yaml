@@ -3,10 +3,25 @@
 #   caption  shown on hover and in the viewer
 #   feature  true -> shown full width at the top of its year (use for group photos)
 
+- year: 2026
+  photo: gallery/group-2026-spring.webp
+  caption: Group photo, spring 2026
+- year: 2026
+  photo: gallery/msd-review-2026.webp
+  caption: Berkeley Lab MSD review, 2026
+- year: 2026
+  photo: gallery/msd-review-2026-b.webp
+  caption: Berkeley Lab MSD review, 2026
 - year: 2025
   photo: gallery/group-2025.webp
   caption: Group photo, 2025
   feature: true
+- year: 2025
+  photo: gallery/holiday-2025.webp
+  caption: Holiday party, Dec 2025
+- year: 2025
+  photo: gallery/mse45-final-2025.webp
+  caption: MSE 45 final exam, 2025
 - year: 2024
   photo: gallery/group-2024.webp
   caption: Group photo, spring 2024

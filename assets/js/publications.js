@@ -4,6 +4,8 @@
 (function () {
   var list = document.getElementById("pub-list");
   if (!list || !window.PUBS) return;
+  // Newest first; entries keep their order within a year, undated ones go last.
+  window.PUBS.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
   var PER = 20;
   var SCHOLAR = "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YsKTazIAAAAJ&citation_for_view=";
   var input = document.getElementById("pub-search");
@@ -36,13 +38,23 @@
       return (p.title + " " + (p.authors || "") + " " + (p.venue || "") + " " + (p.year || "")).toLowerCase().indexOf(q) !== -1;
     });
   }
+  // Page numbers: all of them when they fit, otherwise the first and last page plus a
+  // window around the current one, always the same number of slots (9, or 7 on phones).
   function pageButtons(pages) {
-    var out = [], lo = Math.max(2, page - 1), hi = Math.min(pages - 1, page + 1);
-    out.push(1);
-    if (lo > 2) out.push("…");
-    for (var i = lo; i <= hi; i++) out.push(i);
-    if (hi < pages - 1) out.push("…");
-    if (pages > 1) out.push(pages);
+    var slots = window.innerWidth < 480 ? 7 : 9, out = [], i;
+    if (pages <= slots) { for (i = 1; i <= pages; i++) out.push(i); return out; }
+    var side = (slots - 5) / 2, run = slots - 2;   // numbers shown next to the current page / at an end
+    if (page <= run - side) {
+      for (i = 1; i <= run; i++) out.push(i);
+      out.push("…", pages);
+    } else if (page >= pages - (run - side) + 1) {
+      out.push(1, "…");
+      for (i = pages - run + 1; i <= pages; i++) out.push(i);
+    } else {
+      out.push(1, "…");
+      for (i = page - side; i <= page + side; i++) out.push(i);
+      out.push("…", pages);
+    }
     return out;
   }
   function render(scroll) {
