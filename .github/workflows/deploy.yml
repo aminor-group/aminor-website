@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: Install Hugo
         run: |
-          curl -sSLo "$RUNNER_TEMP/hugo.tar.gz" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
+          curl -fsSL --retry 5 --retry-all-errors --retry-delay 5 -o "$RUNNER_TEMP/hugo.tar.gz" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
           tar -C "$RUNNER_TEMP" -xzf "$RUNNER_TEMP/hugo.tar.gz" hugo
       - uses: actions/checkout@v7
       - id: pages
